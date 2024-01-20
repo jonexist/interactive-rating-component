@@ -12,23 +12,37 @@
 <main>
   <div class="rating-state">
     <!-- Rating state start -->
-    <h3>How did we do?</h3>
-    <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
-    <ul>
-      <li>1</li>
-      <li>2</li>
-      <li>3</li>
-      <li>4</li>
-      <li>5</li>
-    </ul>
-    <button type="submit">Submit</button>
+    <div class="rating-component">
+      <figure class="rating-star">
+        <img src="/images/icon-star.svg" alt="Star Icon">
+      </figure>
+      <div class="rating-selection">
+        <h2>How did we do?</h2>
+        <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+        <ul class="rate-list">
+          <li class="rating">1</li>
+          <li class="rating">2</li>
+          <li class="rating">3</li>
+          <li class="rating">4</li>
+          <li class="rating">5</li>
+        </ul>
+      <button id="submit-rating" type="submit">Submit</button>
+      </div>
+    </div>
     <!-- Rating state end -->
   </div>
-  <div class="success-rate">
+  <div class="thank-you-state hide">
     <!-- Thank you state start -->
-    <p>You selected <span id="rate-value"></span> out of 5</p>
-    <h3>Thank you!</h3>
-    <p>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+    <div class="thank-you-component">
+      <figure class="thank-you">
+        <img src="/images/illustration-thank-you.svg" alt="Thank you svg">
+      </figure>
+      <div class="success-component">
+        <p class="rate-label">You selected <span id="rate-value"></span> out of 5</p>
+        <h2>Thank you!</h2>
+        <p class="message">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+      </div>
+    </div>
     <!-- Thank you state end -->
   </div>
 </main>
@@ -36,7 +50,7 @@
 <footer class="attribution">
   Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
   Coded by <a href="#">Jonathan Goboli</a>.
-<footer/>
+</footer>
 <script defer src="/js/main.js"></script>
 </body>
 </html>
