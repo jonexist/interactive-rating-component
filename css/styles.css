@@ -17,18 +17,16 @@
 body {
   font-size: 15px;
   background-color: var(--very-Dark-Blue);
-  height: 100dvh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 0 5%;
   overflow: hidden !important;
 }
 main {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
+  width: 100%;
+  height: 98dvh;
 }
 .rating-state,
 .thank-you-state {
@@ -149,13 +147,19 @@ img {
   }
 }
 
+@media (max-width: 350px) {
+  .rating-state,
+  .thank-you-state {
+    width: 300px;
+  }
+}
+
 .attribution { 
-  position: relative;
-  top: 20%;
   font-size: 11px; 
   text-align: center;
   color: var(--light-grey);
 }
+
 .attribution a { 
   color: hsl(228, 45%, 44%); 
 }
